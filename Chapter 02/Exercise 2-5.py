@@ -18,3 +18,11 @@
 # 420.0 miles in 6 hours.
 # 700.0 miles in 10 hours.
 # 1050.0 miles in 15 hours.
+
+SPEED = 70  # miles per hour
+time_periods = [6, 10, 15]  # hours
+
+print("The car will travel the following distances:")
+for hours in time_periods:
+    distance = SPEED * hours
+    print(f"{distance:.1f} miles in {hours} hours.")

@@ -26,3 +26,19 @@
 # Subtotal: 150.00
 # Sales Tax: 10.50
 # Total: 160.50
+
+TAX_RATE = 0.07
+
+item_prices = []
+
+for i in range(1, 6):
+    price = float(input(f"Enter the price of item #{i}: "))
+    item_prices.append(price)
+
+subtotal = sum(item_prices)
+tax = subtotal * TAX_RATE
+total = subtotal + tax
+
+print(f"Subtotal: {subtotal:.2f}")
+print(f"Sales Tax: {tax:.2f}")
+print(f"Total: {total:.2f}")

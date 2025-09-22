@@ -23,3 +23,11 @@
 # Enter the amount of space, in feet, used by an end-post assembly: 5
 # Enter the distance, in feet, between each vine: 3
 # You have enough space for 30.0 vines.
+
+row_len = float(input("Enter the length of the row in feet: "))
+end_post_space = float(input("Enter the amount of space used by an end-post assembly in feet: "))
+vine_distance = float(input("Enter the distance between each vine in feet: "))
+
+num_vines = (row_len - 2 * end_post_space) / vine_distance
+
+print(f"You have enough space for {num_vines:.1f} vines.")

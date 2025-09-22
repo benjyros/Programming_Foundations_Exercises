@@ -12,3 +12,7 @@
 # Example:
 # Enter the projected sales: 1000
 # The projected profit is 230.00
+
+sales = float(input("Enter the projected sales: "))
+profit = sales * 0.23
+print(f"The projected profit is {profit:.2f}")

@@ -20,3 +20,15 @@
 # Enter the number of tigers: 25
 # Lions: 37.50%
 # Tigers: 62.50%
+
+lions = float(input("Enter the number of lions: "))
+tigers = float(input("Enter the number of tigers: "))
+
+cats = lions + tigers
+percent_lions = lions / cats
+percent_tigers = tigers / cats
+
+print(f"""
+Lions: {percent_lions:.2%}
+Tigers: {percent_tigers:.2%}
+""")

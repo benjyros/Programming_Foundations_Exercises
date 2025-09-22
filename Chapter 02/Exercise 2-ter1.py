@@ -23,3 +23,17 @@
 # 00101010
 # 00101010
 # 00101010
+
+while True:
+	try:
+		dec_number = int(input("Enter a decimal number: "))
+		break
+	except ValueError:
+		print("Invalid input. Please enter a whole number (integer).")
+
+print(f"""
+{"{0:b}".format(dec_number)}
+{"{0:08b}".format(dec_number)}
+{f'{dec_number:08b}'}
+{format(dec_number, '08b')}
+""")

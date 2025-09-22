@@ -23,3 +23,19 @@
 # Tip: $9.00
 # Tax: $3.50
 # Total: $62.50
+
+TAX_RATE = 0.07  # 7%
+TIP_RATE = 0.18  # 18%
+
+charge_for_food = float(input("Enter the charge for food: "))
+
+tip = charge_for_food * TIP_RATE
+tax = charge_for_food * TAX_RATE
+
+total = charge_for_food + tip + tax
+
+print(f"""
+Tip: ${tip:.2f}
+Tax: ${tax:.2f}
+Total: ${total:.2f}
+""")

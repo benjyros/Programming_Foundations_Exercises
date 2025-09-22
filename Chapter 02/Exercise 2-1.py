@@ -17,3 +17,9 @@
 # Riverfolk, IN 43286
 # 812-555-1212
 # Computer Science
+
+print("Benjyros")
+print("Some Street 123")
+print("Some City, AG 1234")
+print("+41 79 123 45 67")
+print("Business Information Technology")

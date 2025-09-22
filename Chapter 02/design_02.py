@@ -24,3 +24,30 @@
 # Note: Use begin_fill() and end_fill() for the inner triangle
 #
 # Expected result: An outer triangle outline with a filled inner triangle
+
+import turtle
+
+OUTER_TOP_X, OUTER_TOP_Y = 0, 200
+INNER_TOP_X, INNER_TOP_Y = 0, 100
+BASE_LEFT_X, BASE_LEFT_Y = -100, 0
+BASE_RIGHT_X, BASE_RIGHT_Y = 100, 0
+
+turtle.hideturtle()
+turtle.penup()
+
+turtle.goto(BASE_RIGHT_X, BASE_RIGHT_Y)
+
+turtle.fillcolor("blue")
+turtle.pendown()
+
+turtle.goto(OUTER_TOP_X, OUTER_TOP_Y)
+turtle.goto(BASE_LEFT_X, BASE_LEFT_Y)
+turtle.goto(BASE_RIGHT_X, BASE_RIGHT_Y)
+
+turtle.begin_fill()
+turtle.goto(INNER_TOP_X, INNER_TOP_Y)
+turtle.goto(BASE_LEFT_X, BASE_LEFT_Y)
+turtle.goto(BASE_RIGHT_X, BASE_RIGHT_Y)
+turtle.end_fill()
+
+turtle.done()
